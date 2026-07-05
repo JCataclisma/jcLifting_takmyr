@@ -21,6 +21,8 @@ If you want to use any other name, just open this SQF file and perform an automa
 This script will be update quite often.
 Several other features, actions and areas will be available.
 The "lite" version will not have the whole lot of features of the full version that you might see on videos in my channel, as their heavy core relies mostly on dependencies from my JC_Lifting mod.
+You will most likely find a quite messy content inside, as every time I make this "lite" version ready I just delete my mod-dependencies content and somehow reposition what is left - but it should all work, nonetheless.
+If throughout the time this script receives more content you thing it might have a negative impact in your game/server performance, just setup some triggers to activate/deactivate it - the next areas of the ship are suposed to be "modular", for better performance and control.
 
 ==================
 -NETWORK and CONTACT
