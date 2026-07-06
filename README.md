@@ -4,7 +4,7 @@ Artma 3 - Extra features for the USS Takmyr from Expeditionary Forces DLC
 =============================
 -DOWNLOAD and INSTALLATION
 
--copy this file into your root mission folder (the same place where you find mission.sqm);
+-copy ALL these files into your root mission folder (the same place where you find mission.sqm);
 -add the object/prop USS Takmyr, from Expeditionary Forces DLC into your mission, either in mission editor, Zeus or script;
 -give it the variable name "takmyr";
 -while in gameplay, open debug menu [ESC], paste the line below and hit [EXEC]: []execVm "takmyr_lite.sqf"  ;
@@ -14,6 +14,30 @@ Artma 3 - Extra features for the USS Takmyr from Expeditionary Forces DLC
 -CUSTOM NAME?
 
 If you want to use any other name, just open this SQF file and perform an automatic find & replace for "takmyr" into the name of your choice.
+
+====================
+-DIFFERENT MODULES:
+
+Every single module is summoned and spawned at the moment the main "takmyr_lite" file is called.
+If you don't wan any of them, just search for the block below, inside the "lite" file, and block the lines related to what you don't want, just like the "module_bathroom" you can see there.
+Note that even if a module is blocked from spawning, it WILL still be available for selection in the "teleporters" laptops. 
+Although the script is meant to retunr a denied message in such cases, it might happen that the player is thrown underwater, in position [0,0,0] of the map, case they insist in selecting an unexistent module.
+
+// =========================================================================
+// MODULAR CHAMBER INITIALIZATION PANELS
+// =========================================================================
+
+// Arguments: [Parent Object, Relative Offset [X, Y, Z]]
+//[takmyr, [0, 6.6, 1.6]] execVM "module_bathroom.sqf";
+[takmyr, [4.5, 40.25, 4.5]] execVM "module_serviceRoom.sqf";
+[takmyr, [-6.5, 46.16, 2.5]] execVM "module_engineRoom.sqf";
+[takmyr, [0, 58.5, 20.9]] execVM "module_controlBridge.sqf";
+[takmyr, [-9, -35.5, 17.5]] execVM "module_hangarBridge.sqf";
+[takmyr, [-9, -35.5, 5.75]] execVM "module_lowerDeckControl.sqf";
+[takmyr, [0, 78, 10.83]] execVM "module_frontLandingDeck.sqf";
+[takmyr, [-4.75, -21.31, 10.75]] execVM "module_hangarService.sqf";
+
+
 
 ====================
 -UPDATES and stuff
