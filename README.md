@@ -16,15 +16,10 @@ The file-tree your mission folder must have to make sure this stuff will work:
 [MISSION_NAME.MAP]
 
 |-mission.sqm
-
 |-description.ext
-
 |-takmyr_lite.sqf
-
 |->-[FUNCTIONS]
-
     |->-[TAKMY_CRANE]
-    
     |->-[TAKMYR_MODULES]
     
 
