@@ -51,6 +51,7 @@ Although the script is meant to return a denied message in such cases, it might 
 // =========================================================================
 
 // Arguments: [Parent Object, Relative Offset [X, Y, Z]]
+
 //[takmyr, [0, 6.6, 1.6]] execVM "module_bathroom.sqf";
 
 [takmyr, [4.5, 40.25, 4.5]] execVM "module_serviceRoom.sqf";
