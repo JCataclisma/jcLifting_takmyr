@@ -4,7 +4,7 @@ Arma 3 - Extra features for the USS Takmyr from Expeditionary Forces DLC
 =============================
 -DOWNLOAD and INSTALLATION
 
--copy ALL these files into your root mission folder (the same place where you find mission.sqm);
+-copy all these files into your root mission folder (the same place where you find mission.sqm);
 
 -inside the file 'functions\takmyr_crane\description.ext' you will find the content that is required to correctly activate this script pack: move the .ext file into your mission root folder or MERGE the content in case you already got that file;
 
@@ -12,7 +12,10 @@ Arma 3 - Extra features for the USS Takmyr from Expeditionary Forces DLC
 
 -give it the variable name "takmyr";
 
--while in gameplay, open debug menu [ESC], paste the line below and hit [EXEC]: []execVm "takmyr_lite.sqf"  ;
+-while in gameplay, open debug menu [ESC], paste the line below and hit [EXEC]:
+
+[]execVm "takmyr_lite.sqf"  ;
+
 --or execute the same file using scripts.
 
 ...........
