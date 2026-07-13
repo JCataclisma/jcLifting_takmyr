@@ -90,10 +90,9 @@ sleep 0.1;
 		
 
 
-
 // --- DOCKBARGE SPAWN --- Upper Deck
         private _dockAnchorUpperDeck = [0, 7.5, 12.51];
-//        takmyr setVariable ["JC_Barge_dockAnchorUpperDeck", _dockAnchorUpperDeck, true];
+
         private _dockCompArrayUpperDeck = [
             ["PortableHelipadLight_01_yellow_F", [0, 0, 0.16], [0, 0, 0]],
             ["PortableHelipadLight_01_red_F", [0, 7.5, 0.16], [0, 0, 0]],
@@ -123,7 +122,6 @@ sleep 0.1;
         
         private _centerLightUpperDeck = _spawnedDockUpperDeck select 0;
         private _tentFloorUpperDeck = _spawnedDockUpperDeck select 13;
-        
 
 
         [_centerLightUpperDeck, [
@@ -185,7 +183,7 @@ sleep 0.1;
 
 // --- DOCKBARGE SPAWN --- FRONT DECK
         private _dockAnchorFrontDeck = [0, 78, 10.83];
-//        takmyr setVariable ["JC_Barge_dockAnchorFrontDeck", _dockAnchorFrontDeck, true];
+
         private _dockCompArrayFrontDeck = [
             ["PortableHelipadLight_01_yellow_F", [0, 0, 0.16], [0, 0, 0]],
             ["PortableHelipadLight_01_red_F", [0, 6, 0.16], [0, 0, 0]],
@@ -215,7 +213,6 @@ sleep 0.1;
         
         private _centerLightFrontDeck = _spawnedDockFrontDeck select 0;
         private _tentFloorFrontDeck = _spawnedDockFrontDeck select 13;
-        
 
 
         [_centerLightFrontDeck, [
@@ -276,9 +273,10 @@ sleep 0.1;
 
 
 
+
 // --- DOCKBARGE SPAWN --- FRONT HANGAR
         private _dockAnchorFront = [0, -56.7, 9.6];
-//        takmyr setVariable ["JC_Barge_dockAnchorFront", _dockAnchorFront, true];
+
         private _dockCompArrayFront = [
             ["PortableHelipadLight_01_yellow_F", [0, 0, 0.16], [0, 0, 0]],
             ["PortableHelipadLight_01_red_F", [0, 8, 0.16], [0, 0, 0]],
@@ -319,7 +317,6 @@ _trgInnerSwitchHangar setTriggerArea [6.75, 6.75, 0, true, 3];
 _trgInnerSwitchHangar setTriggerActivation ["WEST", "PRESENT", true];
 _trgInnerSwitchHangar setTriggerStatements ["this", "{_x setDamage 0; _x setFuel 1; _x setVehicleAmmo 1} forEach thisList;", ""];
         
-
 
         [_centerLightFront, [
             "<t color='#FFFF00'>Request SAR Cougar</t>", 
@@ -377,8 +374,7 @@ _trgInnerSwitchHangar setTriggerStatements ["this", "{_x setDamage 0; _x setFuel
             };
         };
 
-			
-		
+
 
 _innerSwitch switchLight OFF; _outerSwitch switchLight OFF;
 
@@ -792,21 +788,20 @@ JC_fnc_setupTeleportTerminal = {
 [_medKitEntry] call JC_fnc_setupTeleportTerminal;
 
 
-
-
 // =========================================================================
 // MODULAR CHAMBER INITIALIZATION PANELS
 // =========================================================================
 
 // Arguments: [Parent Object, Relative Offset [X, Y, Z]]
-//[takmyr, [0, 6.6, 1.6]] execVM "module_bathroom.sqf";
-[takmyr, [4.5, 40.25, 4.5]] execVM "module_serviceRoom.sqf";
-[takmyr, [-6.5, 46.16, 2.5]] execVM "module_engineRoom.sqf";
-[takmyr, [0, 58.5, 20.9]] execVM "module_controlBridge.sqf";
-[takmyr, [-9, -35.5, 17.5]] execVM "module_hangarBridge.sqf";
-[takmyr, [-9, -35.5, 5.75]] execVM "module_lowerDeckControl.sqf";
-[takmyr, [0, 78, 10.83]] execVM "module_frontLandingDeck.sqf";
-[takmyr, [-4.75, -21.31, 10.75]] execVM "module_hangarService.sqf";
+//[takmyr, [0, 6.6, 1.6]] execVM "functions\takmyr_modules\module_bathroom.sqf";
+[takmyr, [4.5, 40.25, 4.5]] execVM "functions\takmyr_modules\module_serviceRoom.sqf";
+[takmyr, [-6.5, 46.16, 2.5]] execVM "functions\takmyr_modules\module_engineRoom.sqf";
+[takmyr, [0, 58.5, 20.9]] execVM "functions\takmyr_modules\module_controlBridge.sqf";
+[takmyr, [-9, -35.5, 17.5]] execVM "functions\takmyr_modules\module_hangarBridge.sqf";
+[takmyr, [-9, -35.5, 5.75]] execVM "functions\takmyr_modules\module_lowerDeckControl.sqf";
+[takmyr, [0, 78, 10.83]] execVM "functions\takmyr_modules\module_frontLandingDeck.sqf";
+[takmyr, [-4.75, -21.31, 10.75]] execVM "functions\takmyr_modules\module_hangarService.sqf";
+
 
 
 //	--- UPPER ENTRY FOR HANGAR BRIDGE
@@ -984,16 +979,6 @@ _trgTeleport setTriggerStatements [
     } forEach thisList;",
     ""
 ];
-
-/*
-Service Room: _varSuffix = 'ServiceRoom'; _alertName = 'Service Dock';
-Engine Room: _varSuffix = 'EngineRoom'; _alertName = 'Engine Room';
-Control Bridge: _varSuffix = 'ControlBridge'; _alertName = 'Control Bridge';
-Hangar Bridge: _varSuffix = 'HangarBridge'; _alertName = 'Hangar Bridge';
-Front Landing: _varSuffix = 'FrontLandingDeck'; _alertName = 'Front Landing Deck';
-Hangar Service: _varSuffix = 'HangarService'; _alertName = 'Hangar Service Gate';
-*/
-
 
 
 // --- INSTRUCTORS VENDORS PRESET LOADOUT GEAR ---
