@@ -18,7 +18,9 @@ The file-tree your mission folder must have to make sure this stuff will work:
 |-mission.sqm
 |-description.ext
 |-takmyr_lite.sqf
+
 |->-[FUNCTIONS]|->-[TAKMY_CRANE]
+
 |->-[FUNCTIONS]|->-[TAKMYR_MODULES]
     
 
