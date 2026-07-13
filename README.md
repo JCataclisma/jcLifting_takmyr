@@ -29,13 +29,21 @@ Although the script is meant to retunr a denied message in such cases, it might 
 
 // Arguments: [Parent Object, Relative Offset [X, Y, Z]]
 //[takmyr, [0, 6.6, 1.6]] execVM "module_bathroom.sqf";
+
 [takmyr, [4.5, 40.25, 4.5]] execVM "module_serviceRoom.sqf";
+
 [takmyr, [-6.5, 46.16, 2.5]] execVM "module_engineRoom.sqf";
+
 [takmyr, [0, 58.5, 20.9]] execVM "module_controlBridge.sqf";
+
 [takmyr, [-9, -35.5, 17.5]] execVM "module_hangarBridge.sqf";
+
 [takmyr, [-9, -35.5, 5.75]] execVM "module_lowerDeckControl.sqf";
+
 [takmyr, [0, 78, 10.83]] execVM "module_frontLandingDeck.sqf";
+
 [takmyr, [-4.75, -21.31, 10.75]] execVM "module_hangarService.sqf";
+
 
 
 
