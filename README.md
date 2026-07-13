@@ -16,7 +16,7 @@ Artma 3 - Extra features for the USS Takmyr from Expeditionary Forces DLC
 --or execute the same file using scripts.
 
 ...........
-The file-tree your mission folder must have to make sure this stuff will work:
+Below is the suggested file-tree your mission folder must have to make sure this stuff will work:
 
 [MISSION_NAME.MAP]
 
