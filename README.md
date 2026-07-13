@@ -1,5 +1,5 @@
 # jcLifting_takmyr
-Artma 3 - Extra features for the USS Takmyr from Expeditionary Forces DLC
+Arma 3 - Extra features for the USS Takmyr from Expeditionary Forces DLC
 
 =============================
 -DOWNLOAD and INSTALLATION
