@@ -1,0 +1,53 @@
+/*
+    Takmyr Crane - Mission description.ext Test Environment
+    Place this file in your mission root folder (or merge it with your existing description.ext).
+    Assumes your folder structure is: YOUR_MISSION.VR\functions\takmyr_crane\
+*/
+
+// Include the UI Dialogs
+#include "functions\takmyr_crane\takmyr_ui_dialog.hpp"
+// Note: takmyr_ui_dialog.hpp internally includes takmyr_ui_defines.hpp, so we only need to include the dialog here.
+
+class CfgFunctions {
+    class JC {
+        tag = "JC";
+        class TakmyrCrane {
+            file = "functions\takmyr_crane";
+            
+            // Core Crane Logic
+            class takmyr_craneEngage {};
+            class takmyr_craneDisengage {};
+            class takmyr_craneAttemptDisengage {};
+            class takmyr_craneTow {};
+            class takmyr_craneRelease {};
+            class takmyr_uiUpdateLoop {};
+			class takmyr_craneMove {};
+            
+            // Adapted UI / Camera Scripts
+            class huronConfig {};
+            class previewMouseButtonDown {};
+            class previewMouseMoving {};
+            class previewMouseZChanged {};
+            class setupPreviewCamera {};
+            class takmyrManager {};
+            class takmyr_cleanupPreviewCamera {};
+            class takmyr_config {};
+            class takmyr_onSelChanged {};
+            class takmyr_openWorkshop {};
+            class takmyr_populateWorkshop {};
+            class takmyr_previewMouseButtonDown {};
+            class takmyr_previewMouseButtonUp {};
+            class takmyr_previewMouseMoving {};
+            class takmyr_previewMouseZChanged {};
+            class takmyr_setupPreviewCamera {};
+            class takmyr_updatePreviewCamera {};
+            class updatePreviewCamera {};
+            class workshopUI {};
+			
+			// IMPORTED CAMERAS FROM JC_LIFTING HELICOPTERS AND VEHICLES
+			class jc_camAbove {};
+			class jc_camSideGroundLevel {};
+			class jc_camFollow {};
+        };
+    };
+};
