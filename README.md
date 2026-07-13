@@ -40,7 +40,7 @@ If you want to use any other name, just open this SQF file and perform an automa
 Every single module is summoned and spawned at the moment the main "takmyr_lite" file is called.
 If you don't wan any of them, just search for the block below, inside the "lite" file, and block the lines related to what you don't want, just like the "module_bathroom" you can see there.
 Note that even if a module is blocked from spawning, it WILL still be available for selection in the "teleporters" laptops. 
-Although the script is meant to retunr a denied message in such cases, it might happen that the player is thrown underwater, in position [0,0,0] of the map, case they insist in selecting an unexistent module.
+Although the script is meant to return a denied message in such cases, it might happen that the player is thrown underwater, in position [0,0,0] of the map, case they insist in selecting an unexistent module.
 
 // =========================================================================
 // MODULAR CHAMBER INITIALIZATION PANELS
