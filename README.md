@@ -6,7 +6,7 @@ Arma 3 - Extra features for the USS Takmyr from Expeditionary Forces DLC
 
 -copy ALL these files into your root mission folder (the same place where you find mission.sqm);
 
--inside the file 'functions\takmyr_crane\description.ext' you will find the content that is required to correctly activate this script pack - mode the .ext file into your mission root folder or MERGE the content in case you already got that file;
+-inside the file 'functions\takmyr_crane\description.ext' you will find the content that is required to correctly activate this script pack: move the .ext file into your mission root folder or MERGE the content in case you already got that file;
 
 -add the object/prop USS Takmyr, from Expeditionary Forces DLC into your mission, either in mission editor, Zeus or script;
 
