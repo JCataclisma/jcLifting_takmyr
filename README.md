@@ -36,6 +36,7 @@ Below is the suggested file-tree your mission folder must have to make sure this
 -CUSTOM NAME?
 
 If you want to use any other name, just open this SQF file and perform an automatic find & replace for "takmyr" into the name of your choice.
+IMPORTANT: if you happen to find something starting with a underline, like '_takmyr', do NOT replace those.
 
 ====================
 -DIFFERENT MODULES:
